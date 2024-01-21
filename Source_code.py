@@ -1,9 +1,10 @@
+# Import necessary libraries
 import cv2
 import dlib
 import numpy as np
 from scipy.spatial import distance
 
-# Eye aspect ratio (EAR) calculation function
+# Function to calculate the eye aspect ratio (EAR)
 def eye_aspect_ratio(eye):
     A = distance.euclidean(eye[1], eye[5])
     B = distance.euclidean(eye[2], eye[4])
